@@ -10,7 +10,7 @@ export const products = [
   },
   {
     id: 2,
-    team: "Real Madrid",
+    team: "RealMadrid",
     name: "Real Madrid Home Kit 25/26",
     price: 94.99,
     image: "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/bb3e148743aa4423bc25ceb575e14bce_9366/Real_Madrid_25-26_Home_Jersey_White_JJ1931_01_laydown.jpg",
@@ -34,7 +34,7 @@ export const products = [
   },
   {
     id: 5,
-    team: "PSG",
+    team: "ParisSaintGermain",
     name: "PSG Home Kit 25/26",
     price: 99.99,
     image: "https://images.footballfanatics.com/paris-saint-germain/psg-nike-home-stadium-shirt-2025-26_ss5_p-202333088+pv-2+u-0l5g5cgim1ikkcuoqp61+v-kubcmmwa6ivfruwd4ydz.jpg?_hv=2&w=1018",
