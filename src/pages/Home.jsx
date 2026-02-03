@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import ProductCard from '../components/productcard'
+import ProductCard from '../components/ProductCard'
 import { products } from '../data/products'
 
 const Home = () => {
