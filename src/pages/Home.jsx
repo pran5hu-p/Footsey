@@ -7,9 +7,12 @@ const Home = () => {
   return (
     <div>
         <Hero />
-        <div className='px-100'>
-            <div className='font-bold text-xl pt-6 pb-4'>Featured Clubs Jerseys</div>
-            <div className='grid grid-cols-3 gap-y-2 mb-2 gap-2'>
+        <div className='container mx-auto px-4 md:px-10 py-8'>
+            
+            <div className='font-bold text-2xl md:text-3xl pt-6 pb-6 text-slate-900'>
+                Featured Club Jerseys
+            </div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10'>
                 {products.map((product) => (
                     <ProductCard key={product.id} product={product} />
                 ))}
