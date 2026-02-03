@@ -1,16 +1,97 @@
-# React + Vite
+# Footsey ⚽ - Football Jersey Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Footsey is a responsive e-commerce web application built with **React** and **Tailwind CSS**. It serves as a premium landing page and shopping interface for official football club jerseys.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+**[https://footsey.netlify.app/]**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+* **Dynamic Team Pages:** Filter products dynamically by club (Barcelona, Real Madrid, Liverpool, PSG, Bayern).
+* **Immersive UI:** Team-specific stadium banners and color themes that adapt based on the selected club.
+* **Smart Cart System:** * Add items to cart.
+    * Increment/Decrement quantities directly from product cards or the cart page.
+    * Real-time subtotal and shipping calculations.
+* **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
+* **Checkout Simulation:** A styled checkout page handling delivery availability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* **Frontend:** React.js (Vite)
+* **Styling:** Tailwind CSS
+* **Routing:** React Router DOM
+* **State Management:** React Context API (Cart Logic)
+* **Icons:** Lucide React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+
+```text
+FOOTSEY/
+├── public/
+│   ├── _redirects
+│   └── vite.svg
+├── src/
+│   ├── assets/
+│   │   ├── barcelona logo.png
+│   │   ├── bayern logo.png
+│   │   ├── footseyhero.jpg
+│   │   ├── liverpool logo.png
+│   │   ├── psg logo.png
+│   │   ├── react.svg
+│   │   └── real madrid logo.png
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Navbar.jsx
+│   │   └── ProductCard.jsx
+│   ├── context/
+│   │   └── CartContext.jsx
+│   ├── data/
+│   │   └── products.js
+│   ├── pages/
+│   │   ├── Cart.jsx
+│   │   ├── Checkout.jsx
+│   │   ├── Home.jsx
+│   │   └── Team.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+└── package-lock.json
+```
+
+---
+
+## ⚡ Getting Started
+
+Follow these steps to run the project locally on your machine.
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/your-username/footsey.git](https://github.com/your-username/footsey.git)
+    cd footsey
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in Browser**
+    Visit `http://localhost:5173` to view the app.
+
+## 📦 Build for Production
+
+To create an optimized build for deployment (e.g., Netlify, Vercel):
+
+```bash
+npm run build
+```
